@@ -1,0 +1,12 @@
+# cook your dish here
+num=int(input())
+li=[]
+for i in range(num):
+    li.append(int(input()))
+m=0
+li.sort()
+for i in li:
+    if m<i*num:
+        m=i*num
+    num=num-1
+print(m)
