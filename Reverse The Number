@@ -1,0 +1,10 @@
+num= int(input())
+li=[]
+for i in range(num):
+    x=str(input())
+    x="".join(reversed(x))
+    li.append(int(x))
+    
+for j in range(num):
+    print(li[j])
+    
