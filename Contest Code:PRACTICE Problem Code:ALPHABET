@@ -1,0 +1,23 @@
+def myfun(word,txt):
+    x=False
+    for ele in txt:
+        if word.find(ele)!=-1:
+            x=True
+        else:
+            x=False
+            break
+    return x
+            
+            
+if __name__=="__main__":
+    word=input()
+    n=int(input())
+    for i in range(n):
+        txt=input()
+        x=myfun(word,txt)
+        if x:
+            print("Yes")
+        else:
+            print("No")
+
+    
