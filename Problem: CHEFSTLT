@@ -1,0 +1,24 @@
+def myfun(x,y):
+    mi_n=0
+    ma_x=0
+    for i in range(len(x)):
+        if (x[i] or y[i])=="?":
+            ma_x+=1
+        elif(x[i] and y[i])=="?":
+            ma_x+=1 
+        elif x[i]==y[i]:
+            pass
+        elif [i]!=y[i]!="?":
+            ma_x+=1 
+            mi_n+=1
+    print(mi_n,ma_x)
+        
+                
+                
+            
+if __name__=="__main__":
+    n=int(input())
+    for i in range(n):
+        x=input()
+        y=input()
+        myfun(x,y)
