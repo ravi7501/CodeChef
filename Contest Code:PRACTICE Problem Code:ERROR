@@ -1,0 +1,7 @@
+x=int(input())
+for i in range(x):
+    y=input()
+    if y.find("010")!=-1 and y.find("101")!=-1:
+        print("Good")
+    else:
+        print("Bad")
