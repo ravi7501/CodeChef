@@ -1,0 +1,5 @@
+x=int(input())
+for i in range(x):
+    y=input()
+    y=y.replace("party","pawri")
+    print(y)
