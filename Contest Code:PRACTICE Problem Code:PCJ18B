@@ -1,0 +1,14 @@
+import math
+def myfun(x):
+    su_m=0
+    for i in range(1,x+1):
+        if i%2!=0:
+            li=(x-i+1)
+            li=math.pow(li,2)
+            su_m+=li
+    print(int(su_m))
+        
+n=int(input())
+for i in range(n):
+    x=int(input())
+    myfun(x)
