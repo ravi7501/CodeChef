@@ -1,0 +1,16 @@
+def myfun(li,y):
+    st=""
+    for i in li:
+        if i<=y:
+            y-=i 
+            st+="1"
+        else:
+            st+="0"
+    print(st)        
+        
+    
+n=int(input())
+for i in range(n):
+    x,y=map(int,input().split())
+    li=list(map(int,input().split()))
+    myfun(li,y)
