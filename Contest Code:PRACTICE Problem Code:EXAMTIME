@@ -1,0 +1,30 @@
+def myfun(dr,sl):
+    dr_sum=sum(dr)
+    sl_sum=sum(sl)
+    if dr_sum==sl_sum:
+        if dr[0]>sl[0]:
+            print("DRAGON")
+        elif dr[0]<sl[0]:
+            print("SLOTH")
+        else:
+            if dr[1]>sl[1]:
+              print("DRAGON")
+            elif dr[1]<sl[1]:
+              print("SLOTH")
+            else:
+                if dr[2]>sl[2]:
+                   print("DRAGON")
+                elif dr[2]<sl[2]:
+                   print("SLOTH")
+                else:
+                    print("TIE")
+    elif dr_sum>sl_sum:
+        print("DRAGON")
+    else:
+        print("SLOTH")
+        
+n=int(input())
+for i in range(n):
+    dr=list(map(int,input().split()))
+    sl=list(map(int,input().split()))
+    myfun(dr,sl)
