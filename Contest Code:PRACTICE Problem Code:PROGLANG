@@ -1,0 +1,17 @@
+def myfun(li):
+    a=li[0]
+    b=li[1]
+    x=li[2]
+    y=li[3]
+    r=li[4]
+    s=li[5]
+    if (a==x and b==y) or (a==y and b==x):
+        print(1)
+    elif (a==r and b==s) or (a==s and b==r):
+        print(2)
+    else:
+        print(0)
+n=int(input())
+for i in range(n):
+    li=list(map(int,input().split()))
+    myfun(li)
