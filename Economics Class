@@ -1,0 +1,14 @@
+def myfun(li,ui):
+    count=0
+    for i in range(len(li)):
+        if li[i]==ui[i]:
+            count+=1 
+    return count
+        
+n= int(input())
+for i in range(n):
+    x=int(input())
+    li=list(map(int,input().split()))
+    ui=list(map(int,input().split()))
+    res=myfun(li,ui)
+    print(res)
