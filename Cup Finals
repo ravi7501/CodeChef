@@ -1,0 +1,9 @@
+# cook your dish here
+n= int(input())
+for i in range(n):
+    x,y,z=map(int,input().split())
+    dif=abs(x-y)
+    if dif<=z:
+        print("YES")
+    else:
+        print("NO")
