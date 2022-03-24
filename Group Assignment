@@ -1,0 +1,11 @@
+def myfun(n,x):
+    return (2*n-x+1)
+   
+    
+    
+n= int(input())
+for i in range(n):
+    x,y=map(int,input().split())
+    res=myfun(x,y)
+    print(res)
+    
