@@ -1,0 +1,17 @@
+def myfun(li):
+    li.sort()
+    su=0
+    mx=0
+    for i in range(len(li)):
+        su=li[i]*(len(li)-i)
+        if su>=mx:
+            mx=su
+    return mx  
+    
+    
+n=int(input())
+li=[]
+for i in range(n):
+    x=int(input())
+    li.append(x)
+print(myfun(li))
