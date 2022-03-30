@@ -1,0 +1,36 @@
+# cook your dish here
+def myfun(stacks,seq,n,h):
+  pos = 0
+  hold = False
+  for i in seq:
+    if i == 1:
+        if pos > 0 :
+            pos -= 1
+            
+    elif i == 2:
+        if pos < n-1:
+            pos += 1
+            
+    elif i == 3:
+        if ( stacks[pos] > 0 ) and not hold:
+            stacks[pos] = stacks[pos] - 1
+            hold = True
+    
+    elif i == 4:
+        if (not not hold) and stacks[pos] < h :
+            stacks[pos] = stacks[pos] + 1
+            hold = False
+        
+    elif i == 0:
+        break
+  return stacks
+
+n,h=map(int,input().split())
+li=list(map(int,input().split()))
+ui=list(map(int,input().split()))
+x=myfun(li,ui,n,h)
+st=""
+for ele in x:
+    st+=str(ele)
+    st+=" "
+print(st)
