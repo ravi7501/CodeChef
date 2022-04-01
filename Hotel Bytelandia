@@ -1,0 +1,20 @@
+# cook your dish here
+def mylist(li,ui):
+    x=max(ui)
+    dic={}
+    for i in range(1,x+1):
+        dic[i]=0
+    for i  in range(len(li)):
+        a=li[i]
+        b=ui[i]
+        while a<b:
+            dic[a]+=1 
+            a+=1 
+    y=sorted(dic.values() ,  reverse= True)
+    return y[0]
+n=int(input())
+for i in range(n):
+    x=int(input())
+    li=list(map(int,input().split()))
+    ui=list(map(int,input().split()))
+    print(mylist(li,ui))
